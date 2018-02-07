@@ -1,0 +1,29 @@
+{
+  "name": "image_search_abstraction_layer",
+  "version": "0.0.1",
+  "description": "freeCodeCamp, image-search-api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakossandor/IMAGE_SEARCH_ABSTRACTION_LAYER.git"
+  },
+  "keywords": [
+    "image-search",
+    "freeCodeCamp"
+  ],
+  "author": "Sándor Bakos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakossandor/IMAGE_SEARCH_ABSTRACTION_LAYER/issues"
+  },
+  "homepage": "https://github.com/bakossandor/IMAGE_SEARCH_ABSTRACTION_LAYER#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2"
+  }
+}
