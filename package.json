@@ -1,6 +1,6 @@
 {
   "name": "image_search_abstraction_layer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "freeCodeCamp, image-search-api",
   "main": "app.js",
   "scripts": {
@@ -24,7 +24,9 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "mongoose": "^5.0.3"
+    "lodash.pick": "^4.4.0",
+    "mongoose": "^5.0.3",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "morgan": "^1.9.0"
