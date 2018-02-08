@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
+router.get("/:search", (req, res, next) => {
     res.status(200).json({
-        message: "handling get requests at the imagesearch field"
+        requestUrlParameter: req.params.search,
+        requestQuery: req.query
     });
 });
 
