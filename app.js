@@ -1,14 +1,12 @@
 //npm modules
 const express = require("express");
-// const bodyParser = require("body-parser");
-// const cors = require("cors");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
 const morgan = require("morgan");
 
 // middlewares
-// app.use(cors());
-// app.use(bodyParser.json());
+app.use(cors());
 
 //testing the app
 const apiBaseRoot = require("./api/routes/api_landing_page");
@@ -26,7 +24,7 @@ app.use(morgan("dev"));
 
 app.use("/", apiBaseRoot);
 app.use("/api/imagesearch", apiImageSearch);
-app.use("/api/history", apiImageSearch);
+app.use("/api/history", apiHistory);
 
 app.use((req, res, next) => {
     const error = new Error("Not Found");
