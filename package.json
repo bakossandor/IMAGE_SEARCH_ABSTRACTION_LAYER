@@ -1,6 +1,6 @@
 {
   "name": "image_search_abstraction_layer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "freeCodeCamp, image-search-api",
   "main": "app.js",
   "scripts": {

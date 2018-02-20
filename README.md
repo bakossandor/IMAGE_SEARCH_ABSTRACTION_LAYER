@@ -1,6 +1,10 @@
 # IMAGE_SEARCH_ABSTRACTION_LAYER
 freeCodeCamp Project - IMAGE_SEARCH_ABSTRACTION_LAYER
 
+##20FEB2018 - v 0.0.4
+- url param patched
+- api description in the "/" route added
+
 ##19FEB2018 - v 0.0.3
 - all the routes works
 - db works - search schema with mongoose was created 
