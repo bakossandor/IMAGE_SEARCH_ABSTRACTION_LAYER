@@ -8,6 +8,9 @@ const morgan = require("morgan");
 // middlewares
 app.use(cors());
 
+app.set('views', './api/views');
+app.set('view engine', 'pug');
+
 //testing the app
 const apiBaseRoot = require("./api/routes/api_landing_page");
 const apiImageSearch = require("./api/routes/api_image_search");

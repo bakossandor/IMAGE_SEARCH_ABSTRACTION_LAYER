@@ -19,7 +19,7 @@ router.get("/:search", (req, res, next) => {
     } else if (padding && padding > 100) {
         resultMax = 100;
     }
-    var url = `https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}&q=dogs&per_page=10`
+    var url = `https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}&q=${searchedImage}&per_page=${resultMax}`
     
     request(url, (error, response, body) => {
         var responseBody = JSON.parse(body);
