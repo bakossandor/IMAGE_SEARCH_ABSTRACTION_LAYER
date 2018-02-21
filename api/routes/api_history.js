@@ -4,7 +4,7 @@ const router = express.Router();
 const Search = require("../models/searched_images");
 
 router.get("/", (req, res, next) => {
-    Search.find({}).sort('-when')
+    Search.find({}, {_id: 0, __v: 0}).sort('-when')
         .exec()
         .then(doc => {
             res.status(200).json(doc);
