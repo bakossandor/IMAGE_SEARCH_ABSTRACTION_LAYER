@@ -16,6 +16,8 @@ const apiBaseRoot = require("./api/routes/api_landing_page");
 const apiImageSearch = require("./api/routes/api_image_search");
 const apiHistory = require("./api/routes/api_history");
 
+const port = process.env.PORT || 3000;
+
 mongoose.connect(process.env.MONGO_URI, (error) => {
     if (error) {
         return error;
@@ -44,6 +46,6 @@ app.use((error, req, res, next) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("server is listening on port 3000");
+app.listen(port, () => {
+    console.log(`server is listening on port ${port}`);
 });
