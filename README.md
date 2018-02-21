@@ -1,5 +1,11 @@
 # IMAGE_SEARCH_ABSTRACTION_LAYER
 freeCodeCamp Project - IMAGE_SEARCH_ABSTRACTION_LAYER
+https://evening-crag-84772.herokuapp.com
+
+##21FEB2018 - v 0.1.0
+- deployed and tested on heroku
+- morgan npm is commented
+- api history is patched it exludes now the _id and the __v
 
 ##20FEB2018 - v 0.0.4
 - url param patched
