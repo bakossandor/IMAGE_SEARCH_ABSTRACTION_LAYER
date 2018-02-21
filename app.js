@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
-const morgan = require("morgan");
+// const morgan = require("morgan");
 
 // middlewares
 app.use(cors());
