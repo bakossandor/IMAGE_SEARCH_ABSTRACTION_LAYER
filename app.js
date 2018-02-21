@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI, (error) => {
     console.log("connecting to mlab database");
 });
 
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 app.use("/", apiBaseRoot);
 app.use("/api/imagesearch", apiImageSearch);
